@@ -1,0 +1,14 @@
+{
+  "id": "it-0007",
+  "slug": "ipad-mini-6",
+  "name": "iPad mini (6th gen)",
+  "brand": "Apple",
+  "image": "/images/item-7.svg",
+  "list": "favourites",
+  "category": "Tablets",
+  "tags": ["portable", "reading", "notes"],
+  "description": "A delightful small tablet that’s perfect for reading, notes, and travel.",
+  "buyUrl": "https://www.apple.com/ipad-mini/",
+  "addedAt": "2024-02-28T09:45:00.000Z"
+}
+

@@ -1,0 +1,14 @@
+{
+  "id": "it-0104",
+  "slug": "breville-barista-pro",
+  "name": "Barista Pro",
+  "brand": "Breville",
+  "image": "/images/item-12.svg",
+  "list": "wishlist",
+  "category": "Kitchen",
+  "tags": ["coffee", "espresso"],
+  "description": "Fast heat-up and consistent shots in a compact home espresso setup.",
+  "buyUrl": "https://www.breville.com/",
+  "addedAt": "2024-04-02T08:30:00.000Z"
+}
+

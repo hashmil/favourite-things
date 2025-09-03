@@ -1,0 +1,14 @@
+{
+  "id": "it-0105",
+  "slug": "patagonia-nano-puff",
+  "name": "Nano Puff Jacket",
+  "brand": "Patagonia",
+  "image": "/images/item-13.svg",
+  "list": "wishlist",
+  "category": "Apparel",
+  "tags": ["outdoors", "lightweight"],
+  "description": "Warm, windproof, and highly compressible synthetic insulation.",
+  "buyUrl": "https://www.patagonia.com/",
+  "addedAt": "2024-01-17T14:00:00.000Z"
+}
+

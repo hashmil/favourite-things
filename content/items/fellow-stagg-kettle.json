@@ -1,0 +1,14 @@
+{
+  "id": "it-0003",
+  "slug": "fellow-stagg-kettle",
+  "name": "Stagg EKG Electric Kettle",
+  "brand": "Fellow",
+  "image": "/images/item-3.svg",
+  "list": "favourites",
+  "category": "Kitchen",
+  "tags": ["coffee", "tea", "precision"],
+  "description": "Precise temperature control and a beautiful minimalist design for pour-over coffee.",
+  "buyUrl": "https://fellowproducts.com/products/stagg-ekg",
+  "addedAt": "2024-01-20T12:00:00.000Z"
+}
+

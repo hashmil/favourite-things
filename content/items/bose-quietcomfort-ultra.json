@@ -1,0 +1,14 @@
+{
+  "id": "it-0102",
+  "slug": "bose-quietcomfort-ultra",
+  "name": "QuietComfort Ultra",
+  "brand": "Bose",
+  "image": "/images/item-10.svg",
+  "list": "wishlist",
+  "category": "Audio",
+  "tags": ["anc", "over-ear"],
+  "description": "Class-leading comfort and noise cancelling for long flights.",
+  "buyUrl": "https://www.bose.com/",
+  "addedAt": "2024-03-18T09:00:00.000Z"
+}
+

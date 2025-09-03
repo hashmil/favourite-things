@@ -1,0 +1,14 @@
+{
+  "id": "it-0107",
+  "slug": "kindle-scribe",
+  "name": "Kindle Scribe",
+  "brand": "Amazon",
+  "image": "/images/item-15.svg",
+  "list": "wishlist",
+  "category": "Tech",
+  "tags": ["e-ink", "notes"],
+  "description": "Large e-ink reader with note-taking for focused reading and annotation.",
+  "buyUrl": "https://www.amazon.com/kindle-scribe/",
+  "addedAt": "2024-03-08T09:45:00.000Z"
+}
+

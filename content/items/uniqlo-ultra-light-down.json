@@ -1,0 +1,14 @@
+{
+  "id": "it-0008",
+  "slug": "uniqlo-ultra-light-down",
+  "name": "Ultra Light Down Jacket",
+  "brand": "Uniqlo",
+  "image": "/images/item-8.svg",
+  "list": "favourites",
+  "category": "Apparel",
+  "tags": ["travel", "lightweight", "layering"],
+  "description": "Warmth without bulk; packs small for travel.",
+  "buyUrl": "https://www.uniqlo.com/",
+  "addedAt": "2024-01-12T13:00:00.000Z"
+}
+

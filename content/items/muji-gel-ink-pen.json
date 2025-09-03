@@ -1,0 +1,14 @@
+{
+  "id": "it-0004",
+  "slug": "muji-gel-ink-pen",
+  "name": "Smooth Gel Ink Pen (0.5)",
+  "brand": "MUJI",
+  "image": "/images/item-4.svg",
+    "list": "favourites",
+  "category": "Stationery",
+  "tags": ["everyday", "writing"],
+  "description": "Reliable, smooth writing with a simple, clean design.",
+  "buyUrl": "https://www.muji.com/",
+  "addedAt": "2024-01-05T08:30:00.000Z"
+}
+

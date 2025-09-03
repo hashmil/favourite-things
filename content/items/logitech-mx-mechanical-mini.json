@@ -1,0 +1,14 @@
+{
+  "id": "it-0106",
+  "slug": "logitech-mx-mechanical-mini",
+  "name": "MX Mechanical Mini",
+  "brand": "Logitech",
+  "image": "/images/item-14.svg",
+  "list": "wishlist",
+  "category": "Peripherals",
+  "tags": ["keyboard", "wireless"],
+  "description": "Low-profile wireless mechanical keyboard with multi-device pairing.",
+  "buyUrl": "https://www.logitech.com/",
+  "addedAt": "2024-05-01T10:30:00.000Z"
+}
+

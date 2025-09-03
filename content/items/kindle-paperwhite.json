@@ -1,0 +1,14 @@
+{
+  "id": "it-0001",
+  "slug": "kindle-paperwhite",
+  "name": "Kindle Paperwhite",
+  "brand": "Amazon",
+  "image": "/images/item-1.svg",
+  "list": "favourites",
+  "category": "Tech",
+  "tags": ["reading", "e-ink", "portable"],
+  "description": "The sweet spot for distraction-free reading with a sharp, glare-free screen and weeks of battery.",
+  "buyUrl": "https://www.amazon.com/dp/B08WK3S9WJ",
+  "addedAt": "2024-02-11T10:00:00.000Z"
+}
+

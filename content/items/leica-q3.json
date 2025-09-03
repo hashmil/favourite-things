@@ -1,0 +1,14 @@
+{
+  "id": "it-0101",
+  "slug": "leica-q3",
+  "name": "Leica Q3",
+  "brand": "Leica",
+  "image": "/images/item-9.svg",
+  "list": "wishlist",
+  "category": "Cameras",
+  "tags": ["fixed-lens", "full-frame", "premium"],
+  "description": "Dreamy full-frame compact with a stellar 28mm lens.",
+  "buyUrl": "https://leica-camera.com/",
+  "addedAt": "2024-05-12T10:10:00.000Z"
+}
+

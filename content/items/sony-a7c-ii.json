@@ -1,0 +1,14 @@
+{
+  "id": "it-0005",
+  "slug": "sony-a7c-ii",
+  "name": "Alpha a7C II",
+  "brand": "Sony",
+  "image": "/images/item-5.svg",
+  "list": "favourites",
+  "category": "Cameras",
+  "tags": ["mirrorless", "travel", "full-frame"],
+  "description": "Compact full-frame with great autofocus—perfect everyday carry camera.",
+  "buyUrl": "https://electronics.sony.com/",
+  "addedAt": "2024-04-08T15:10:00.000Z"
+}
+

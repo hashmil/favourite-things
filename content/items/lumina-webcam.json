@@ -1,0 +1,14 @@
+{
+  "id": "it-0108",
+  "slug": "lumina-webcam",
+  "name": "Lumina 4K Webcam",
+  "brand": "Lumina",
+  "image": "/images/item-16.svg",
+  "list": "wishlist",
+  "category": "Peripherals",
+  "tags": ["video", "remote"],
+  "description": "Crisp video quality with background blur and color tuning.",
+  "buyUrl": "https://getlumina.com/",
+  "addedAt": "2024-02-24T11:00:00.000Z"
+}
+

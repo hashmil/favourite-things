@@ -1,0 +1,14 @@
+{
+  "id": "it-0002",
+  "slug": "airpods-pro-2",
+  "name": "AirPods Pro (2nd gen)",
+  "brand": "Apple",
+  "image": "/images/item-2.svg",
+  "list": "favourites",
+  "category": "Audio",
+  "tags": ["wireless", "anc", "portable"],
+  "description": "Comfortable fit, excellent ANC, and effortless Apple ecosystem integration.",
+  "buyUrl": "https://www.apple.com/airpods-pro/",
+  "addedAt": "2024-03-05T09:00:00.000Z"
+}
+
