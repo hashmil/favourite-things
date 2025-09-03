@@ -16,9 +16,8 @@ const keystaticConfig = config({
       slugField: 'slug',
       format: { data: 'json' },
       schema: {
-        id: fields.text({ label: 'ID', validation: { isRequired: true } }),
-        slug: fields.text({ label: 'Slug', validation: { isRequired: true, pattern: { regex: /^[a-z0-9-]+$/, message: 'Use lowercase letters, numbers and hyphens' } } }),
-        name: fields.text({ label: 'Name', validation: { isRequired: true } }),
+        slug: fields.text({ label: 'Slug', validation: { length: { min: 1 } } }),
+        name: fields.text({ label: 'Name', validation: { length: { min: 1 } } }),
         brand: fields.text({ label: 'Brand' }),
         image: fields.image({ 
           label: 'Image', 
@@ -29,9 +28,9 @@ const keystaticConfig = config({
           { label: 'Favourites', value: 'favourites' },
           { label: 'Wishlist', value: 'wishlist' }
         ], defaultValue: 'favourites' }),
-        category: fields.text({ label: 'Category' }),
+        category: fields.text({ label: 'Category', validation: { length: { min: 1 } } }),
         tags: fields.array(fields.text({ label: 'Tag' }), { label: 'Tags', itemLabel: props => props.value || 'Tag' }),
-        description: fields.text({ label: 'Description', multiline: true }),
+        description: fields.text({ label: 'Description', multiline: true, validation: { length: { min: 1 } } }),
         buyUrl: fields.url({ label: 'Buy URL' })
       }
     })

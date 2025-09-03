@@ -1,16 +1,14 @@
 export type ItemList = 'favourites' | 'wishlist';
 
 export interface Item {
-  id: string;
   slug: string;
   name: string;
   brand?: string;
-  image: string; // path under /public/images
+  image: string; // path under /public/images (extracted from Keystatic image object)
   list: ItemList;
   category: string;
   tags: string[];
   description: string;
   buyUrl?: string;
-  addedAt: string; // ISO date
 }
 

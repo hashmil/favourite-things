@@ -7,7 +7,6 @@ const KeystaticAppInner = makePage(keystaticConfig);
 
 export default function KeystaticApp() {
   // Render the client-only Keystatic UI
-  // @ts-expect-error upstream types are not exported
   return <KeystaticAppInner />;
 }
 

@@ -6,15 +6,39 @@ const CONTENT_DIR = path.join(process.cwd(), 'content', 'items');
 
 async function readItemFile(file: string): Promise<Item> {
   const raw = await fs.readFile(path.join(CONTENT_DIR, file), 'utf8');
-  return JSON.parse(raw) as Item;
+  const rawItem = JSON.parse(raw);
+  
+  // Handle Keystatic image field format
+  let image: string;
+  if (typeof rawItem.image === 'string') {
+    // Old format - direct string path
+    image = rawItem.image;
+  } else if (rawItem.image && typeof rawItem.image === 'object') {
+    // New Keystatic format - extract path from object
+    image = rawItem.image.src || rawItem.image.value?.src || '/images/placeholder.svg';
+  } else {
+    image = '/images/placeholder.svg';
+  }
+  
+  return {
+    slug: rawItem.slug,
+    name: rawItem.name,
+    brand: rawItem.brand || '',
+    image,
+    list: rawItem.list,
+    category: rawItem.category,
+    tags: rawItem.tags || [],
+    description: rawItem.description,
+    buyUrl: rawItem.buyUrl
+  } as Item;
 }
 
 export async function getAllItems(): Promise<Item[]> {
   const files = await fs.readdir(CONTENT_DIR);
   const jsonFiles = files.filter((f) => f.endsWith('.json'));
   const items = await Promise.all(jsonFiles.map((f) => readItemFile(f)));
-  // Sort newest first by default
-  return items.sort((a, b) => new Date(b.addedAt).getTime() - new Date(a.addedAt).getTime());
+  // Sort alphabetically by name since we no longer have addedAt
+  return items.sort((a, b) => a.name.localeCompare(b.name));
 }
 
 export async function getItemsByList(list: ItemList): Promise<Item[]> {

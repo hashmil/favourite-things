@@ -6,13 +6,13 @@ import { Input } from '@/components/ui/input';
 import { Select } from '@/components/ui/select';
 import { Badge } from '@/components/ui/badge';
 
-type SortKey = 'newest' | 'az' | 'brand';
+type SortKey = 'az' | 'brand';
 
 export function Grid({ items }: { items: Item[] }) {
   const [search, setSearch] = useState('');
   const [category, setCategory] = useState<string>('');
   const [activeTags, setActiveTags] = useState<string[]>([]);
-  const [sort, setSort] = useState<SortKey>('newest');
+  const [sort, setSort] = useState<SortKey>('az');
 
   const { categories, tags } = useMemo(() => {
     const categories = Array.from(new Set(items.map((i) => i.category))).sort((a, b) => a.localeCompare(b));
@@ -36,7 +36,7 @@ export function Grid({ items }: { items: Item[] }) {
         out = out.sort((a, b) => (a.brand ?? '').localeCompare(b.brand ?? ''));
         break;
       default:
-        out = out.sort((a, b) => new Date(b.addedAt).getTime() - new Date(a.addedAt).getTime());
+        out = out.sort((a, b) => a.name.localeCompare(b.name));
     }
     return out;
   }, [items, search, category, activeTags, sort]);
@@ -62,7 +62,6 @@ export function Grid({ items }: { items: Item[] }) {
               ))}
             </Select>
             <Select value={sort} onChange={(e) => setSort(e.target.value as SortKey)} aria-label="Sort items">
-              <option value="newest">Newest</option>
               <option value="az">A–Z</option>
               <option value="brand">Brand</option>
             </Select>
@@ -85,7 +84,7 @@ export function Grid({ items }: { items: Item[] }) {
       {filtered.length > 0 ? (
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6">
           {filtered.map((item) => (
-            <ItemCard key={item.id} item={item} />
+            <ItemCard key={item.slug} item={item} />
           ))}
         </div>
       ) : (

@@ -1,0 +1,10 @@
+{
+  "slug": "air-pods",
+  "name": "Air Pods",
+  "brand": "Apple",
+  "image": "/images/air-pods/image.png",
+  "list": "favourites",
+  "category": "Audio",
+  "tags": ["wireless", "bluetooth"],
+  "description": "Premium wireless earbuds with excellent sound quality and seamless integration with Apple devices."
+}

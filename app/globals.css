@@ -83,3 +83,9 @@ body {
   @apply outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background;
 }
 
+/* Keystatic CMS layout fix - allow content to flow naturally */
+[data-keystatic-app] {
+  min-height: 100vh;
+  height: auto;
+}
+

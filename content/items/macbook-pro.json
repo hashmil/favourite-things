@@ -1,0 +1,12 @@
+{
+  "name": "Macbook Pro",
+  "brand": "Apple",
+  "image": "/images/macbook-pro/image.jpg",
+  "list": "favourites",
+  "category": "Tech",
+  "tags": [
+    "apple",
+    "computer"
+  ],
+  "description": "Macbook pro"
+}

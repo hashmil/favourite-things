@@ -66,7 +66,6 @@ export default async function ItemPage({ params }: { params: { slug: string } })
               Buy / View Product
             </a>
           )}
-          <div className="text-sm text-muted-foreground">Added {new Date(item.addedAt).toLocaleDateString()}</div>
         </aside>
       </div>
     </article>
