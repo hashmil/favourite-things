@@ -20,8 +20,15 @@ async function readItemFile(file: string): Promise<Item> {
     image = '/images/placeholder.svg';
   }
   
+  // Ensure slug exists - if not, generate from filename
+  const slug = rawItem.slug || file.replace('.json', '');
+  
+  if (!slug) {
+    throw new Error(`Item missing slug field: ${file}`);
+  }
+  
   return {
-    slug: rawItem.slug,
+    slug,
     name: rawItem.name,
     brand: rawItem.brand || '',
     image,
