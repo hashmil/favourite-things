@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <div className="min-h-dvh flex flex-col">
             <SiteHeader />
             <main className="flex-1 container py-8">{children}</main>

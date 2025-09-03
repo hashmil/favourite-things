@@ -1,5 +1,5 @@
 import { getItemsByList } from '@/lib/content';
-import { Grid } from '@/components/grid';
+import { SimpleGrid } from '@/components/simple-grid';
 
 export const dynamic = 'error';
 
@@ -11,7 +11,7 @@ export default async function HomePage() {
         <h1 className="text-2xl font-semibold tracking-tight">Favourites</h1>
         <p className="text-muted-foreground">A curated list of things I genuinely love.</p>
       </header>
-      <Grid items={items} />
+      <SimpleGrid items={items} />
     </section>
   );
 }
