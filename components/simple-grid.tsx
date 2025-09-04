@@ -1,10 +1,10 @@
 "use client";
-import { useMemo } from 'react';
+import { useMemo, Suspense } from 'react';
 import type { Item } from '@/lib/types';
 import { SimpleItemCard } from '@/components/simple-item-card';
 import { useSearchParams } from 'next/navigation';
 
-export function SimpleGrid({ items }: { items: Item[] }) {
+function SimpleGridContent({ items }: { items: Item[] }) {
   const searchParams = useSearchParams();
   const search = searchParams.get('search') || '';
 
@@ -31,5 +31,17 @@ export function SimpleGrid({ items }: { items: Item[] }) {
         <p className="text-muted-foreground">No items match your search.</p>
       )}
     </>
+  );
+}
+
+export function SimpleGrid({ items }: { items: Item[] }) {
+  return (
+    <Suspense fallback={<div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
+      {items.slice(0, 8).map((item) => (
+        <SimpleItemCard key={item.slug} item={item} />
+      ))}
+    </div>}>
+      <SimpleGridContent items={items} />
+    </Suspense>
   );
 }

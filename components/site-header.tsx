@@ -4,9 +4,9 @@ import { ThemeToggle } from '@/components/theme-toggle';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { Search } from 'lucide-react';
 import { Input } from '@/components/ui/input';
-import { useCallback } from 'react';
+import { useCallback, Suspense } from 'react';
 
-export function SiteHeader() {
+function SiteHeaderContent() {
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -66,5 +66,26 @@ export function SiteHeader() {
         </div>
       </div>
     </header>
+  );
+}
+
+export function SiteHeader() {
+  return (
+    <Suspense fallback={
+      <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container flex h-16 items-center justify-between gap-4">
+          <div className="flex items-center gap-6">
+            <Link href="/" className="font-semibold tracking-tight text-lg">
+              Favourite Things
+            </Link>
+          </div>
+          <div className="flex items-center gap-3">
+            <ThemeToggle />
+          </div>
+        </div>
+      </header>
+    }>
+      <SiteHeaderContent />
+    </Suspense>
   );
 }

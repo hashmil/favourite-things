@@ -4,6 +4,7 @@ import { ThemeProvider } from 'next-themes';
 import { ConditionalLayout } from '@/components/conditional-layout';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://favourite-things.pages.dev'),
   title: 'Favourite Things',
   description: 'A minimal, premium showcase of my favourite products.',
 };
